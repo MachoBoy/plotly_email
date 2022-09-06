@@ -1,0 +1,978 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>Plotly</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Roboto:wght@500&display=swap");
+      #outlook a {
+        padding: 0;
+      }
+      body {
+        width: 100% !important;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+      }
+      a img {
+        text-decoration: none !important;
+        border: none;
+      }
+      .formBg {
+        background-color: #fff !important;
+      }
+      .heading {
+        color: #000 !important;
+      }
+      .divider {
+        background-color: #e7e7e7 !important;
+        border-color: #e7e7e7 !important;
+      }
+      .unsubscribeLink {
+        color: #7a76ff !important;
+      }
+      @media (prefers-color-scheme: dark) {
+        .formBg {
+          background-color: #0d0d0d !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        span,
+        a,
+        b {
+          color: #7e8489 !important;
+        }
+
+        .heading {
+          color: #fff !important;
+        }
+        .divider {
+          background-color: #282d33 !important;
+          border-color: #282d33 !important;
+        }
+
+        [data-ogsc] h1,
+        [data-ogsc] h2,
+        [data-ogsc] h3,
+        [data-ogsc] h4,
+        [data-ogsc] h5,
+        [data-ogsc] h6,
+        [data-ogsc] p,
+        [data-ogsc] span,
+        [data-ogsc] a,
+        [data-ogsc] b {
+          color: #a2aab8 !important;
+        }
+      }
+    </style>
+    <!--[if mso]>
+<style type=”text/css”>
+.open-sans-text {
+font-family: 'Open Sans', Arial, sans-serif;
+}
+.roboto-text {
+font-family: 'Roboto', Arial, sans-serif;
+}
+</style>
+<![endif]-->
+  </head>
+  <body>
+    <table style="width: 100%; background-color: #f2f6ff; padding: 164px 0">
+      <tbody>
+        <tr>
+          <td>
+            <table
+              width="600"
+              cellpadding="0"
+              cellspacing="0"
+              border="0"
+              style="
+                margin: 0 auto;
+                max-width: 600px;
+                border-collapse: collapse;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td style="text-align: center; padding: 0 0 52px 0">
+                    <img
+                      src="https://reventures-vc.com/wp-content/uploads/2022/09/logo.png"
+                      height="68"
+                      style="max-height: 68px; outline: none"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tr>
+        <td>
+          <center>
+            <table
+              class="formBg"
+              width="600"
+              cellpadding="0"
+              cellspacing="0"
+              border="0"
+              style="
+                margin: 0 auto;
+                max-width: 600px;
+                border-collapse: collapse;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td style="padding: 44px 133px 0 122px">
+                    <table
+                      width="100%"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <img
+                              src="https://reventures-vc.com/wp-content/uploads/2022/09/top.png"
+                              height="228"
+                              style="max-height: 228px; outline: none"
+                            />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table
+                      width="100%"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                    >
+                      <tbody>
+                        <tr>
+                          <td style="padding: 0 42px">
+                            <table
+                              width="100%"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="roboto-text"
+                                    style="
+                                      padding: 28px 0 0 0;
+                                      font-family: 'Roboto', Arial, sans-serif;
+                                    "
+                                  >
+                                    <h1
+                                      style="
+                                        margin: 0;
+                                        color: #000;
+                                        font-weight: 700;
+                                        font-size: 40px;
+                                      "
+                                    >
+                                      Dash Club -2022 Edition
+                                    </h1>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td
+                                    class="open-sans-text"
+                                    style="
+                                      font-family: 'Open Sans', Arial,
+                                        sans-serif;
+                                      padding: 15px 0 0 0;
+                                    "
+                                  >
+                                    <h4
+                                      style="
+                                        margin: 0;
+                                        color: #7e8489;
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                      "
+                                    >
+                                      Hello Dash Club and Happy 2020!
+                                    </h4>
+                                    <p
+                                      style="
+                                        margin: 0;
+                                        color: #7e8489;
+                                        font-weight: 300;
+                                        font-size: 18px;
+                                      "
+                                    >
+                                      It has been a while, and we've got lots of
+                                      good stuff from the last few months to
+                                      share.
+                                    </p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table
+                      width="100%"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      style="padding: 27.5px 54px"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <hr
+                              class="divider"
+                              style="
+                                border-width: 0;
+                                border-style: solid;
+                                height: 1px;
+                              "
+                            />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 42px">
+                    <table
+                      width="100%"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table
+                              width="100%"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="open-sans-text"
+                                    style="
+                                      font-family: 'Open Sans', Arial,
+                                        sans-serif;
+                                    "
+                                  >
+                                    <h4
+                                      style="
+                                        margin: 0;
+                                        color: #7e8489;
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                      "
+                                    >
+                                      We spent the fall working on page load
+                                      performance:
+                                    </h4>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <table
+                                      width="100%"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      border="0"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            class="open-sans-text"
+                                            style="
+                                              padding: 25px 0 0 0;
+                                              font-family: 'Open Sans', Arial,
+                                                sans-serif;
+                                            "
+                                          >
+                                            <p
+                                              style="
+                                                margin: 0;
+                                                color: #7e8489;
+                                                font-weight: 300;
+                                                font-size: 14px;
+                                              "
+                                            >
+                                              1. Previously, we loaded all of
+                                              the JavaScript from all of the
+                                              component librar- ies upfront.
+                                              Now, we load them on demand. This
+                                              is called “lazy loading.” So, if
+                                              your home page doesn't display a
+                                              graph, then the plotly.js library
+                                              isn't loaded until you navigate to
+                                              the page that does.
+                                            </p>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td
+                                            style="
+                                              padding: 20px 0 0 0;
+                                              font-family: 'Open Sans', Arial,
+                                                sans-serif;
+                                            "
+                                          >
+                                            <p
+                                              style="
+                                                margin: 0;
+                                                color: #7e8489;
+                                                font-weight: 300;
+                                                font-size: 14px;
+                                              "
+                                            >
+                                              2. We started caching your app’s
+                                              JavaScript and CSS assets.
+                                            </p>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td
+                                            style="
+                                              padding: 20px 0 0 0;
+                                              font-family: 'Open Sans', Arial,
+                                                sans-serif;
+                                            "
+                                          >
+                                            <p
+                                              style="
+                                                margin: 0;
+                                                color: #7e8489;
+                                                font-weight: 300;
+                                                font-size: 14px;
+                                              "
+                                            >
+                                              With these improvements, our
+                                              documentation
+                                              (https://dash.plot.ly) loads much,
+                                              much faster. Your apps should too!
+                                            </p>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 30px 42px 0 42px">
+                    <table
+                      width="100%"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                    >
+                      <tbody>
+                        <tr>
+                          <td
+                            width="234"
+                            style="width: 234px; padding-right: 31px"
+                            align="left"
+                          >
+                            <table
+                              width="100%"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <img
+                                      src="https://reventures-vc.com/wp-content/uploads/2022/09/lorem_dark.png"
+                                      height="138"
+                                      style="max-height: 138px; outline: none"
+                                    />
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td
+                                    class="roboto-text"
+                                    style="
+                                      padding: 15px 0 4px 0;
+                                      font-family: 'Roboto', Arial, sans-serif;
+                                    "
+                                  >
+                                    <h3
+                                      class="heading"
+                                      style="
+                                        margin: 0;
+                                        color: #1e1e1e;
+                                        font-weight: 600;
+                                        font-size: 21px;
+                                      "
+                                    >
+                                      Lorem ipsum text
+                                    </h3>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td
+                                    class="open-sans-text"
+                                    style="
+                                      font-family: 'Open-Sans', Arial,
+                                        sans-serif;
+                                    "
+                                  >
+                                    <p
+                                      style="
+                                        margin: 0;
+                                        color: #7e8489;
+                                        font-weight: 300;
+                                        font-size: 14px;
+                                      "
+                                    >
+                                      Lorem ipsum dolor sit amet, consecte- tur
+                                      adipiscing elit, sed do eiusmod tempor.
+                                    </p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="padding: 8px 0 0 0">
+                                    <a
+                                      href="#"
+                                      target="_blank"
+                                      style="
+                                        display: inline-block;
+                                        text-decoration: none;
+                                      "
+                                    >
+                                      <img
+                                        src="https://reventures-vc.com/wp-content/uploads/2022/09/read_more.png"
+                                        height="37"
+                                        style="max-height: 37px; outline: none"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td
+                            width="234"
+                            style="width: 234px; padding-left: 0"
+                            align="right"
+                          >
+                            <table
+                              width="100%"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <img
+                                      src="https://reventures-vc.com/wp-content/uploads/2022/09/lorem_light.png"
+                                      height="138"
+                                      style="max-height: 138px; outline: none"
+                                    />
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td
+                                    class="roboto-text"
+                                    style="
+                                      padding: 15px 0 4px 0;
+                                      font-family: 'Roboto', Arial, sans-serif;
+                                    "
+                                  >
+                                    <h3
+                                      class="heading"
+                                      style="
+                                        margin: 0;
+                                        color: #1e1e1e;
+                                        font-weight: 600;
+                                        font-size: 21px;
+                                      "
+                                    >
+                                      Lorem ipsum text
+                                    </h3>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td
+                                    class="open-sans-text"
+                                    style="
+                                      font-family: 'Open-Sans', Arial,
+                                        sans-serif;
+                                    "
+                                  >
+                                    <p
+                                      style="
+                                        margin: 0;
+                                        color: #7e8489;
+                                        font-weight: 300;
+                                        font-size: 14px;
+                                      "
+                                    >
+                                      Lorem ipsum dolor sit amet, consecte- tur
+                                      adipiscing elit, sed do eiusmod tempor.
+                                    </p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="padding: 8px 0 0 0">
+                                    <a
+                                      href="#"
+                                      target="_blank"
+                                      style="
+                                        display: inline-block;
+                                        text-decoration: none;
+                                      "
+                                    >
+                                      <img
+                                        src="https://reventures-vc.com/wp-content/uploads/2022/09/read_more.png"
+                                        height="37"
+                                        style="max-height: 37px; outline: none"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table
+                      width="100%"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      style="padding: 60.5px 54px 33.5px 54px"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <hr
+                              class="divider"
+                              style="
+                                border-width: 0;
+                                border-style: solid;
+                                height: 1px;
+                              "
+                            />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 42px">
+                    <table
+                      width="100%"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                    >
+                      <tbody>
+                        <tr>
+                          <td
+                            width="185"
+                            style="width: 185px; padding-right: 28px"
+                            align="left"
+                          >
+                            <table
+                              width="100%"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <img
+                                      src="https://reventures-vc.com/wp-content/uploads/2022/09/person.png"
+                                      height="234"
+                                      style="max-height: 234px; outline: none"
+                                    />
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td
+                            width="284"
+                            style="
+                              max-width: 284px;
+                              padding-left: 0;
+                              text-align: left;
+                            "
+                            align="left"
+                          >
+                            <table
+                              width="100%"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="roboto-text"
+                                    style="
+                                      font-family: 'Roboto', Arial, sans-serif;
+                                    "
+                                  >
+                                    <h3
+                                      class="heading"
+                                      style="
+                                        margin: 0;
+                                        color: #1e1e1e;
+                                        font-weight: 600;
+                                        font-size: 21px;
+                                      "
+                                    >
+                                      Lorem ipsum text
+                                    </h3>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td
+                                    class="open-sans-text"
+                                    style="
+                                      padding: 8px 0 0 0;
+                                      font-family: 'Open-Sans', Arial,
+                                        sans-serif;
+                                    "
+                                  >
+                                    <p
+                                      style="
+                                        max-width: 284px;
+                                        margin: 0;
+                                        color: #7e8489;
+                                        font-weight: 300;
+                                        font-size: 14px;
+                                        line-height: 19.07px;
+                                      "
+                                    >
+                                      Lorem ipsum dolor sit amet, consectetur
+                                      adipiscing elit, sed do eiusmod tempor
+                                      incidi- dunt ut labore et dolore magna
+                                      aliqua. Ut enim ad minim veniam, quis
+                                      nostrud exercitation ullamco laboris nisi
+                                      ut aliquip ex ea commodo consequat.
+                                    </p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="padding: 15px 0 0 0">
+                                    <a
+                                      href="#"
+                                      target="_blank"
+                                      style="
+                                        display: inline-block;
+                                        text-decoration: none;
+                                      "
+                                    >
+                                      <img
+                                        src="https://reventures-vc.com/wp-content/uploads/2022/09/read_more.png"
+                                        height="37"
+                                        style="max-height: 37px; outline: none"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 55px 42px 0 42px">
+                    <table
+                      width="100%"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                    >
+                      <tbody>
+                        <tr>
+                          <td
+                            style="padding-left: 0; text-align: left"
+                            align="left"
+                          >
+                            <table
+                              width="252px"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="roboto-text"
+                                    style="
+                                      font-family: 'Roboto', Arial, sans-serif;
+                                    "
+                                  >
+                                    <h3
+                                      class="heading"
+                                      style="
+                                        margin: 0;
+                                        color: #1e1e1e;
+                                        font-weight: 600;
+                                        font-size: 21px;
+                                      "
+                                    >
+                                      Lorem ipsum text
+                                    </h3>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td
+                                    class="open-sans-text"
+                                    style="
+                                      padding: 8px 0 0 0;
+                                      font-family: 'Open-Sans', Arial,
+                                        sans-serif;
+                                    "
+                                  >
+                                    <p
+                                      style="
+                                        margin: 0;
+                                        color: #7e8489;
+                                        font-weight: 300;
+                                        font-size: 14px;
+                                        line-height: 19.07px;
+                                      "
+                                    >
+                                      Lorem ipsum dolor sit amet, consectetur
+                                      adipiscing elit, sed do eiusmod tempor
+                                      incidi- dunt ut labore et dolore magna
+                                      aliqua. Ut enim ad minim veniam, quis
+                                      nostrud exercitation ullamco laboris nisi
+                                      ut aliquip ex ea commodo consequat.
+                                    </p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="padding: 15px 0 0 0">
+                                    <a
+                                      href="#"
+                                      target="_blank"
+                                      style="
+                                        display: inline-block;
+                                        text-decoration: none;
+                                      "
+                                    >
+                                      <img
+                                        src="https://reventures-vc.com/wp-content/uploads/2022/09/read_more.png"
+                                        height="37"
+                                        style="max-height: 37px; outline: none"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td
+                            width="100%"
+                            style="padding-left: 32px"
+                            align="left"
+                          >
+                            <table
+                              width="100%"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <img
+                                      src="https://reventures-vc.com/wp-content/uploads/2022/09/person.png"
+                                      height="234"
+                                      style="max-height: 234px; outline: none"
+                                    />
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 78.5px 54px 54.5px 54px">
+                    <table
+                      width="100%"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <hr
+                              class="divider"
+                              style="
+                                border-width: 0;
+                                border-style: solid;
+                                height: 1px;
+                              "
+                            />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 440px 0 54px">
+                    <table
+                      width="100%"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table
+                              width="100%"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <img
+                                      src="https://reventures-vc.com/wp-content/uploads/2022/09/sns.png"
+                                      height="21"
+                                      style="max-height: 21px; outline: none"
+                                    />
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 15px 54px 41px 54px">
+                    <table
+                      width="100%"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                    >
+                      <tbody>
+                        <tr>
+                          <td
+                            class="open-sans-text"
+                            style="font-family: 'Open-Sans', Arial, sans-serif"
+                          >
+                            <p
+                              style="
+                                margin: 0;
+                                color: #7e8489;
+                                font-weight: 300;
+                                font-size: 14px;
+                              "
+                            >
+                              Ⓒ 2022 Plotly. All rights reserved.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="open-sans-text"
+                            style="font-family: 'Open-Sans', Arial, sans-serif"
+                          >
+                            <p
+                              style="
+                                margin: 0;
+                                color: #7e8489;
+                                font-weight: 300;
+                                font-size: 14px;
+                              "
+                            >
+                              Click
+                              <a
+                                class="unsubscribeLink"
+                                href="#"
+                                target="_blank"
+                                style="
+                                  color: #7a76ff;
+                                  font-weight: 600;
+                                  text-decoration: none;
+                                "
+                                >HERE</a
+                              >
+                              to unsubscribe or change your email preferences.
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </center>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
